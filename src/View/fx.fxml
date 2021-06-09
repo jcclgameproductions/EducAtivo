@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="490.0" style="-fx-background-color: #0F3057;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.FxController">
+   <children>
+      <AnchorPane layoutY="-15.0" prefHeight="565.0" prefWidth="497.0">
+         <children>
+            <Pane layoutX="45.0" layoutY="14.0" prefHeight="550.0" prefWidth="408.0" style="-fx-background-color: #1D2247;">
+               <children>
+                  <Pane id="box" layoutX="22.0" layoutY="179.0" prefHeight="346.0" prefWidth="365.0" style="-fx-border-color: black; -fx-background-color: white; -fx-border-width: 0.1; visibility: true;">
+                     <children>
+                        <TextField id="idid" fx:id="usertf" layoutX="53.0" layoutY="151.0" onAction="#btncd" prefHeight="29.0" prefWidth="245.0" promptText="USUARIO:" style="-fx-background-color: #1D2247; -fx-text-fill: white;">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </TextField>
+                        <Hyperlink layoutX="85.0" layoutY="99.0" text="Facebook" />
+                        <Hyperlink layoutX="188.0" layoutY="99.0" text="Email" />
+                        <Separator layoutX="56.0" layoutY="242.0" prefHeight="2.0" prefWidth="239.0" />
+                        <PasswordField id="senha" fx:id="passpf" layoutX="53.0" layoutY="199.0" prefHeight="29.0" prefWidth="245.0" promptText="SENHA:" style="-fx-background-color: #1D2247;">
+                           <font>
+                              <Font name="System Italic" size="11.0" />
+                           </font>
+                        </PasswordField>
+                        <JFXButton fx:id="btnlg" cache="true" cacheHint="SPEED" layoutX="82.0" layoutY="245.0" onAction="#btnlg" prefHeight="34.0" prefWidth="188.0" ripplerFill="#35cdc3" text="login" textFill="#00a9f2">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="17.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="33.0" fitWidth="42.0" layoutX="98.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/600px-Facebook_icon.svg.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="34.0" layoutX="189.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Icons/120px-Gmail_icon_(2020).svg.png" />
+                           </image>
+                        </ImageView>
+                        <JFXButton fx:id="btncd" layoutX="98.0" layoutY="308.0" onAction="#btncd" prefHeight="34.0" prefWidth="157.0" ripplerFill="#4aee4f" text="Não tem conta? " textFill="#00a9f2">
+                           <font>
+                              <Font name="Futura Bk BT Book" size="17.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+                  <Circle fill="#f4f6f8" layoutX="86.0" layoutY="96.0" radius="56.0" stroke="#0f3057" strokeType="OUTSIDE" strokeWidth="10.0" />
+                  <ImageView fitHeight="147.0" fitWidth="157.0" layoutX="7.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Icons/EducAtivo_Icon.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="169.0" layoutY="46.0" text="EDUCA" textFill="WHITE">
+                     <font>
+                        <Font name="Webdings" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="173.0" layoutY="86.0" text="ATIVO" textFill="WHITE">
+                     <font>
+                        <Font name="Webdings" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="251.0" prefWidth="442.0" style="-fx-background-color: #0F3057;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controller.CadastroController">
+   <children>
+      <Pane layoutX="29.0" layoutY="21.0" prefHeight="186.0" prefWidth="364.0" style="-fx-background-color: #1D2247;">
+         <children>
+            <JFXTextField fx:id="tuser" layoutX="67.0" layoutY="46.0" promptText="Usuário" style="-fx-background-color: white; -fx-text-fill: black;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btn_cad" layoutX="67.0" layoutY="147.0" onAction="#clickcad" ripplerFill="#ff00ae" style="-fx-background-color: #ffffff;" text="Cadastrar" textAlignment="CENTER" />
+            <JFXPasswordField fx:id="tsenha" layoutX="66.0" layoutY="87.0" promptText="Senha" style="-fx-background-color: white; -fx-text-fill: black;">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXPasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
